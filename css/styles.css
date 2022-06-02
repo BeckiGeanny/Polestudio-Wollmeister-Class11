@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #9A8C98;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 90pt;
+    font-family: "AlexBrush-Regular";
+
+}
+
+h2 {
+    font-family: "PlayfairDisplay-Regular";
+    font-size: 25px;
+    color: #9A8C98;
+    text-align: left;
+}
+
+h3 {
+    font-family: "PlayfairDisplay-Regular";
+    font-size: 20px;
+    color: #7d667a;
+    text-align: left;
+    margin-left: 40px;
+
+}
+
+p {
+    font-family: "PlayfairDisplay-Regular";
+}
+
+@font-face {
+    font-family: "AlexBrush-Regular";
+    src: url('../fonts/AlexBrush-Regular.ttf');
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Regular";
+    src: url('../fonts/PlayfairDisplay-Regular.otf');
+}
+
+body {
+    background: url("../img/Poledance1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "PlayfairDisplay-Regular";
+
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    text-align: justify;
+    text-decoration: none;
+    padding: 8px;
+    background-color: rgb(190, 187, 183);
+}
+
+li a:hover {
+    background-color: rgb(183, 155, 183);
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.products li {
+    display: block;
+}
+
+.products li a {
+    text-align: justify;
+    text-decoration: none;
+    background-color: #baaab8;
+    width: 30%;
+}
+
+.event li {
+    display: block;
+    font-weight: bold;
+}
+
+.PoleDance {
+    background-color: aliceblue;
+    border: 7px solid #7d667a;
+    box-align: center;
+    padding: 30px;
+}
+
+.Home {
+    display: grid;
+    grid-template-columns: 40% 30%;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20%;
+    column-gap: 30%;
+    place-items: center;
+    place-content: center;
+
+}
+
+.UEvents {
+    background-color: aliceblue;
+    border: 7px solid #7d667a;
+    padding: 30px;
+}
+
+.Newsletter {
+    background-color: aliceblue;
+    border: 7px solid #7d667a;
+    padding: 30px;
+
+}
+
+.sideimage {
+    width: auto;
+    height: auto;
+}
+.sideimage:hover{
+    transform: scale(1.5) translateX(-220px);
+    transition: all 1.5s;
+    padding: 3em;
+    background-color: #bdacbb;
+}
+
+.definition {
+    background-color: aliceblue;
+    position: absolute;
+    top: 250px;
+    right: 5px;
+    width: 30%;
+    height: auto;
+    border: #7d667a;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(53, 2, 101);
+    background-color: aliceblue;
+}
+
+th {
+    height: 50px;
+    background-color: #baa9b8;
+}
+
+.AboutUs {
+    width: auto;
+    background-color: aliceblue;
+    margin-bottom: 50px;
+    border: 7px solid #7d667a;
+    padding: 10px;
+}
+
+.FigureClass {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: space-evenly;
+    font-family: "PlayfairDisplay-Regular";
+
+}
+textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #7d667a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.News {
+    background-color: aliceblue;
+    width: 50%;
+}
+
+.Event {
+    width: 20%;
+    font-size: 15px;
+    padding-right: 50px;
+    background-color: #7d667a;
+    color: white;
+    animation: bounce 1.5s infinite alternate;
+}
+    
+@keyframes bounce {
+    to { transform: scale(1.2) translateX(70px);
+}
+
+.SignUp {
+    width: 20%;
+    font-size: small;
+    background-color: #7d667a;
+    color: white;
+    margin-top: 10px;
+    margin-left: 240px;
+}
+
+.ImgRight:hover {
+   transform: scale(1.5) translateX(220px);
+   transition: all 1.5s;
+   padding: 3em;
+   background-color: #bdacbb;
+
+}
+.ImgLeft:hover {
+    transform: scale(1.5) translateX(-220px);
+    transition: all 1.5s;
+    padding: 3em;
+    background-color: #bdacbb;
+    
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    place-items: center;
+    place-content: center;
+}
+@media screen and (max-width: 600px) {
+    .Home {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-content: flex-start;
+        row-gap: 1%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sideimage {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 90pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 30pt;
+    }
+}
